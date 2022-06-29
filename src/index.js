@@ -82,7 +82,6 @@ class Game extends React.Component {
       xIsNext: (step % 2) === 0
     });
   }
-
   
   render() {
     const history = this.state.history;
@@ -110,6 +109,7 @@ class Game extends React.Component {
 
     return (
       <div className="game">
+        <h1 style={{color: 'blue'}}>Seungwon's Game room</h1>
         <div className="game-board">
           <Board
             squares={current.squares}
